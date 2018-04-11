@@ -25,6 +25,7 @@ Usage: scan-network [long GNU option] [option] from [option] to
  --help this screen
 
 Example of usage:
+./scan-network.py -i 10.1.4.*  | grep responds
  scan-network -f 100 -t 254 -i 192.168.1.* # scan range from 192.168.1.100 to 192.168.1.254
  scan-network.py -l examples/example-ip-list # scan ip adresses from file
  cat examples/example-ip-list | scan-network -s # scan from stdin
